@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="odiv">
+    <p id="op">
+        <span id="ospan">请点击我</span>
+    </p>
+</div>
+
+<script src="../作业/yc.js"></script>
+<script>
+    var div=$("#odiv");
+    var p=$("#op");
+    var span=$("#ospan");
+
+    div.addEventListener("click",function(){
+        console.log("div被点击");
+    },false);
+    p.addEventListener("click",function(){
+        console.log("p被点击");
+    },false);
+    span.addEventListener("click",function(){
+        console.log("span被点击");
+    },false);
+    div.addEventListener("click",function(){
+        console.log("div被点击");
+    },true);
+    p.addEventListener("click",function(){
+        console.log("p被点击");
+    },true);
+    span.addEventListener("click",function(){
+        console.log("span被点击");
+    },true);
+</script>
+</body>
+</html>
